@@ -1,0 +1,44 @@
+@import '../../App.scss';
+
+.list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 0;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 25%;
+    padding: 25px;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px $blue;
+
+    &.done {
+      color: #fff;
+      background-color: $blue;
+    }
+
+    &-edit {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #fff;
+      background-color: $blue;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        background-color: $hover;
+      }
+    }
+  }
+}

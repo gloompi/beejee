@@ -1,0 +1,5 @@
+export const appName = 'Beejee-Test'
+export const api = 'https://uxcandy.com/~shapoval/test-task-backend/'
+export const developer = 'gloompi'
+export const adminUsername = 'admin'
+export const adminPassword = '123'

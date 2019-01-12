@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.pagination {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: $hover;
+    }
+
+    &.active {
+      background-color: $hover;
+    }
+  }
+}
